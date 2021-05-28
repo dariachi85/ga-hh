@@ -272,6 +272,14 @@ img {
 }
 
 @media (max-width: 992px) {
+  .hero {
+    text-align: center;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
   .more {
     margin-right: auto;
     margin-left: auto;
@@ -323,13 +331,15 @@ img {
     text-align: right;
     padding: 20px;
   }
+
+  .footer {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: 576px) {
-  .hero {
-    text-align: center;
-  }
-
   .hero-title {
     font-size: 24px;
     line-height: 1.4;
@@ -341,16 +351,8 @@ img {
     text-align: center;
   }
 
-  .section-title {
-    text-align: center;
-  }
-
   .card {
     max-width: 250px;
     margin: auto;
-  }
-
-  .footer {
-    text-align: center;
   }
 }
