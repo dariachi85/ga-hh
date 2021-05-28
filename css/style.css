@@ -11,6 +11,10 @@ body {
   color: #111238;
 }
 
+img {
+  max-width: 100%;
+}
+
 .header {
   background: #f2f3f6;
 }
@@ -35,6 +39,7 @@ body {
   display: inline-block;
   border: none;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .button-link {
@@ -52,11 +57,11 @@ body {
 
 .button-icon {
   vertical-align: middle;
-  margin-right: 10px;
 }
 
 .button-text {
   vertical-align: middle;
+  margin-left: 10px;
 }
 
 .hero-title {
@@ -253,4 +258,99 @@ body {
   font-size: 16px;
   color: #111238;
   margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .offer-salsry {
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+
+  .more {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .more {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .offer-image {
+    margin-right: 0;
+  }
+
+  .offer-title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .tag {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+
+  .is-open {
+    transform: translateX(0);
+  }
+
+  .menu-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .button-link {
+    margin-right: 0;
+  }
+
+  .close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: right;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .tags-label {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .card {
+    max-width: 250px;
+    margin: auto;
+  }
+
+  .footer {
+    text-align: center;
+  }
 }
